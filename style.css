@@ -348,14 +348,19 @@ template {
   display: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
-nav ul {
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.menu ul {
   list-style: none;
 }
-nav ul li {
+.menu ul li {
   display: inline-block;
   padding: 1em;
 }
