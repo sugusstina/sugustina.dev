@@ -367,6 +367,9 @@ template {
 body {
   font-family: 'Visby', Arial, Helvetica, sans-serif;
 }
+a {
+  text-decoration: none;
+}
 
 .container {
   width: 100%;
@@ -377,6 +380,7 @@ body {
 .banner {
   display: flex;
   justify-content: space-between;
+  background-color: #8693d4;
 }
 
 .nav-bar {
@@ -386,4 +390,9 @@ body {
 .item {
   display: inline-block;
   padding: 1em;
+}
+
+.color-one {
+  color: #ffffff;
+  font-weight: bold;
 }
