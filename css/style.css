@@ -415,10 +415,6 @@ a {
   align-items: center;
 }
 
-.block-left {
-  flex: 1;
-}
-
-.block-right {
+.column {
   flex: 1;
 }
