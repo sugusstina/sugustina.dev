@@ -423,6 +423,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 35px 0;
+  color: #f7f7f7;
 }
 
 .nav-bar {
@@ -443,9 +444,9 @@ a {
   padding: 0 25px;
 }
 
-.color-one {
-  color: #fff;
-  font-weight: bold;
+.item a {
+  color: #f7f7f7;
+  font-weight: 600;
 }
 
 .block {
@@ -454,17 +455,20 @@ a {
   align-items: center;
 }
 
-.banner-color {
+.hero-section {
   background: linear-gradient(to bottom, rgba(235, 235, 250, 1) 0%, rgba(190, 192, 234, 1) 100%);
   padding-top: 100px;
+  color: #f7f7f7;
 }
 
 .column {
   flex: 1;
 }
 
-.color-class {
-  color: #f7f7f7;
+.hero-title {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .button-link {
@@ -479,4 +483,7 @@ a {
 
 .hero-text {
   margin: 0 0 60px;
+  line-height: 28px;
+  font-size: 18px;
+  padding-top: 30px;
 }
