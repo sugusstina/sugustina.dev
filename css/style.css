@@ -8,9 +8,11 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
@@ -51,9 +53,12 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -62,8 +67,10 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
@@ -83,9 +90,12 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -105,8 +115,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -162,10 +174,14 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
@@ -174,7 +190,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +201,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -238,12 +256,18 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -269,8 +293,10 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -288,8 +314,10 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -306,8 +334,10 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
@@ -353,7 +383,7 @@ template {
   font-weight: 600;
   font-display: swap;
   src: url('fonts/VisbyRoundCF-Bold.woff') format('woff'),
-       url('fonts/VisbyRoundCF-Bold.woff2') format('woff2');
+    url('fonts/VisbyRoundCF-Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -361,11 +391,21 @@ template {
   font-weight: 400;
   font-display: swap;
   src: url('fonts/VisbyRoundCF-Regular.woff') format('woff'),
-       url('fonts/VisbyRoundCF-Regular.woff2') format('woff2');
+    url('fonts/VisbyRoundCF-Regular.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Visby', Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  width: 100%;
 }
 
 a {
@@ -381,9 +421,9 @@ a {
 .banner {
   display: flex;
   justify-content: space-between;
-  background-color: #8693d4;
   align-items: center;
   padding: 35px 0;
+  color: #f7f7f7;
 }
 
 .nav-bar {
@@ -404,9 +444,9 @@ a {
   padding: 0 25px;
 }
 
-.color-one {
-  color: #fff;
-  font-weight: bold;
+.item a {
+  color: #f7f7f7;
+  font-weight: 600;
 }
 
 .block {
@@ -415,6 +455,44 @@ a {
   align-items: center;
 }
 
+.hero-section {
+  background: linear-gradient(to bottom, #818fd3 0%, #dc8bdc 100%);
+  padding-top: 100px;
+  color: #f7f7f7;
+}
+
 .column {
   flex: 1;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.button-link {
+  text-decoration: none;
+  background-color:#f7f7f7;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 15px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  margin: 0 0 60px;
+  line-height: 28px;
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.icons-line {
+  display: flex;
+}
+
+.icons {
+    max-width: 22px;
 }
