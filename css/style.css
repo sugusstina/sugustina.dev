@@ -533,3 +533,7 @@ a {
   font-weight: 600;
   color: #f7f7f7;
 }
+
+.experience-text {
+  text-align: right;
+}
