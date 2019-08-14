@@ -485,6 +485,17 @@ a {
   margin: 0 15px 0 0;
   display: flex;
   justify-content: center;
+  transition: background-color .2s ease-in-out;
+  border: 1px solid #f7f7f7;
+}
+
+.button-link:hover {
+  background-color: transparent;
+}
+
+.button-link:hover .icons {
+  transition: filter .2s ease-in-out;
+  filter: brightness(2);
 }
 
 .hero-text {
@@ -499,7 +510,7 @@ a {
 }
 
 .icons {
-    max-width: 22px;
+  max-width: 22px;
 }
 
 .heading {
@@ -532,8 +543,42 @@ a {
   font-size: 16px;
   font-weight: 600;
   color: #f7f7f7;
+  border: none;
+}
+
+.contact-button:hover {
+  background: #8b8fd4;
 }
 
 .experience-text {
   text-align: right;
 }
+
+#contact-text {
+  color: #b4b4b4;
+}
+
+.form-text {
+  font-size: 14px;
+}
+
+.input-style {
+  border-radius: 3px;
+  color: #b4b4b4;
+}
+
+.social-networks {
+  text-decoration: none;
+  background: linear-gradient(to left, #818fd3 0%, #dc8bdc 100%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 15px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+ .social-networks:hover {
+   background: #818fd4;
+ }
+
