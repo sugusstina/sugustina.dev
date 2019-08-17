@@ -485,6 +485,17 @@ a {
   margin: 0 15px 0 0;
   display: flex;
   justify-content: center;
+  transition: background-color .2s ease-in-out;
+  border: 1px solid #f7f7f7;
+}
+
+.button-link:hover {
+  background-color: transparent;
+}
+
+.button-link:hover .icons {
+  transition: filter .2s ease-in-out;
+  filter: brightness(2);
 }
 
 .hero-text {
@@ -499,7 +510,7 @@ a {
 }
 
 .icons {
-    max-width: 22px;
+  max-width: 22px;
 }
 
 .heading {
@@ -526,14 +537,78 @@ a {
 }
 
 .contact-button {
-  background: linear-gradient(to left, #818fd3 0%, #dc8bdc 100%);
   padding: 20px 56px;
   border-radius: 29px;
   font-size: 16px;
   font-weight: 600;
   color: #f7f7f7;
+  border: none;
+}
+
+.contact-button:hover {
+  background: #8b8fd4;
 }
 
 .experience-text {
   text-align: right;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 558px;
+  height: 405px;
+  font-size: 14px
+}
+
+.info-form {
+  display: flex;
+  margin: 45px 0 25px;
+}
+
+.info-form2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 220px;
+}
+
+.input-style {
+  border-radius: 3px;
+  width: 272px;
+  height: 48px;
+  margin-top: 10px;
+  padding: 20px 20px;
+  border: 1px solid #b4b4b4;
+}
+
+::placeholder {
+  color: #b4b4b4;
+  font-size: 17px;
+}
+
+textarea {
+  width: 560px !important;
+  height: 205px !important;
+}
+
+.contact-button,
+.social-networks {
+  background: linear-gradient(to left, rgba(129, 143, 211, .5) 0%, rgba(220, 139, 220, .5) 100%);
+  background-color: #dc8bdc;
+}
+
+.social-networks {
+  text-decoration: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 15px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+ .social-networks:hover {
+   background: #818fd4;
+ }
+
