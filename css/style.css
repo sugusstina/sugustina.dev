@@ -570,6 +570,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
+  margin-bottom: 220px;
 }
 
 .input-style {
