@@ -410,6 +410,7 @@ img {
 header {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 a {
@@ -460,9 +461,17 @@ a {
 }
 
 .hero-section {
-  background: linear-gradient(to bottom, #818fd3 0%, #dc8bdc 100%);
-  padding-top: 100px;
+  padding: 100px 0;
   color: #f7f7f7;
+  background-image: url(../img/clouds.svg), linear-gradient(to bottom, #818fd3 0%, #dc8bdc 100%);
+  background-attachment: fixed, scroll;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: -5px;
 }
 
 .column {
@@ -556,14 +565,27 @@ a {
 .form {
   display: flex;
   flex-direction: column;
-  width: 558px;
-  height: 405px;
   font-size: 14px
 }
 
 .info-form {
   display: flex;
-  margin: 45px 0 25px;
+}
+
+.info-form .info-text:first-child {
+  padding-right: 20px;
+}
+
+.form textarea {
+  min-height: 250px;
+  resize: none;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 20px;
 }
 
 .info-form2 {
@@ -575,8 +597,6 @@ a {
 
 .input-style {
   border-radius: 3px;
-  width: 272px;
-  height: 48px;
   margin-top: 10px;
   padding: 20px 20px;
   border: 1px solid #b4b4b4;
@@ -585,11 +605,6 @@ a {
 ::placeholder {
   color: #b4b4b4;
   font-size: 17px;
-}
-
-textarea {
-  width: 560px !important;
-  height: 205px !important;
 }
 
 .contact-button,
@@ -603,7 +618,7 @@ textarea {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin: 0 15px 0 0;
+  margin: 0 0 0 15px;
   display: flex;
   justify-content: center;
 }
