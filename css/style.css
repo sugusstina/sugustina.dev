@@ -441,6 +441,7 @@ a {
   font-size: 25px;
   letter-spacing: 0.6px;
   margin: 0;
+  padding: 0 30px;
 }
 
 .item {
@@ -474,6 +475,11 @@ a {
   position: absolute;
   bottom: -5px;
   min-width: 100%;
+}
+
+.hero-column {
+  flex: 1;
+  padding: 0 70px;
 }
 
 .column {
@@ -559,6 +565,8 @@ a {
   font-weight: 600;
   color: #f7f7f7;
   border: none;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .contact-button:hover {
@@ -630,7 +638,65 @@ a {
   justify-content: center;
 }
 
- .social-networks:hover {
-   background: #818fd4;
- }
+.social-networks:hover {
+  background: #818fd4;
+}
 
+@media screen and (max-width: 1100px) {
+  .block {
+    flex-direction: column;
+  }
+  .hero-column,
+  .column {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .spacing-column {
+    padding:  70px 30px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 20px;
+  }
+  .item {
+    padding: 30px 0;
+    margin-right: 15px;
+    font-size: 12px;
+  }
+  .icons-line {
+    justify-content: center;
+  }
+  .mobile-order {
+    order: -1;
+  }
+  .unicorn-mobile {
+    display: none;
+  }
+  .button-link {
+    margin: 0 7px;
+  }
+  .contact-first-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-text {
+    text-align: left;
+  }
+  .contact-first-section .contact-text:first-child {
+    padding: 0;
+  }
+  .subheading-form {
+    padding: 0 30px;
+  }
+  .contact-second-section {
+    flex-direction: column;
+  }
+  .contact-second-section .icons-line {
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .social-networks {
+    margin: 0;
+  }
+}
